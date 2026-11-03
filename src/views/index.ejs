@@ -1,0 +1,7 @@
+<h1>Inicio</h1>
+
+<% if (user) { %>
+<p>Bienvenido/a, <%= user.name %>. Ya puede <a href="/categorias">administrar las categorías</a>.</p>
+<% } else { %>
+<p>Para administrar las categorías debe <a href="/login">iniciar sesión</a> o <a href="/register">registrarse</a>.</p>
+<% } %>
